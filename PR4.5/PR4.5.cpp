@@ -6,7 +6,9 @@ using namespace std;
 
 int main()
 {
-	double x, y, R;
+	double x, y;
+	int R;
+	cout << "R = "; cin >> R;
 
 	srand((unsigned)time(NULL));
 
@@ -14,7 +16,6 @@ int main()
 	{
 		cout << "x = "; cin >> x;
 		cout << "y = "; cin >> y;
-		cout << "R = "; cin >> R;
 
 		if (((x * x) + (y * y) < R * R && y < x && x < 0 && y < 0)
 			|| (y > x && (x * x) + (y * y) > R && x > 0 && y > 0))
